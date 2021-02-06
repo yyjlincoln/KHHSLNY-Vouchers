@@ -35,8 +35,10 @@
                 : "th"
             }}
             animal in the chinese zodiac system.
-            {{ funfact }}
           </span>
+          <!-- <span class="font-bold text-xl whitespace-pre-line">
+            2021 is the year of Ox.
+          </span> -->
         </div>
         <div class="flex flex-row justify-between">
           <div>
@@ -54,8 +56,8 @@
             </p>
           </div>
           <div class="mx-10">
-            <img :src="qr" width="70" height="70" />
-            <p>ID: {{ questionID }}</p>
+            <img :src="qr" width="90" height="90" />
+            <p class="text-center mt-2">ID: {{ questionID }}</p>
           </div>
         </div>
       </div>
@@ -71,7 +73,7 @@ export default {
   data: () => ({
     zindex: Math.round(Math.random() * 11),
     message:
-      "Ms Nguyen from the science staffroom might have something for you",
+      "Ms Nguyen from the science staffroom might have something for you.",
     funfact: "",
     questionID: "test",
     qr: "",
